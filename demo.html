@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Sport Group - Alpha Build Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        }
+      }
+    </script>
+    <style>
+      /* Parallax Effect */
+      .parallax {
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation Menu -->
+    <nav class="bg-gray-800 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3">
+                <span class="font-bold text-xl">Virtual Sport Group</span>
+            </a>
+            <button id="menu-toggle" class="md:hidden block text-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html#home" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="index.html#vision" class="hover:text-yellow-400">Our Vision</a></li>
+                <li><a href="index.html#experience" class="hover:text-yellow-400">The Experience</a></li>
+                <li><a href="index.html#why" class="hover:text-yellow-400">Why Us</a></li>
+                <li><a href="index.html#mavericks" class="hover:text-yellow-400">Meet the Team</a></li>
+                <li><a href="index.html#contact" class="hover:text-yellow-400">Get in Touch</a></li>
+                <li><a href="#demo" class="hover:text-yellow-400">Alpha Demo</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden flex flex-col space-y-2 mt-4">
+            <a href="index.html#home" class="block px-4 py-2 text-white hover:text-yellow-400">Home</a>
+            <a href="index.html#vision" class="block px-4 py-2 text-white hover:text-yellow-400">Our Vision</a>
+            <a href="index.html#experience" class="block px-4 py-2 text-white hover:text-yellow-400">The Experience</a>
+            <a href="index.html#why" class="block px-4 py-2 text-white hover:text-yellow-400">Why Us</a>
+            <a href="index.html#mavericks" class="block px-4 py-2 text-white hover:text-yellow-400">Meet the Team</a>
+            <a href="index.html#contact" class="block px-4 py-2 text-white hover:text-yellow-400">Get in Touch</a>
+            <a href="#demo" class="block px-4 py-2 text-white hover:text-yellow-400">Alpha Demo</a>
+        </div>
+    </nav>
+
+    <!-- Alpha Build Demo Section -->
+    <section id="demo" class="h-screen flex flex-col justify-center items-center bg-cover bg-center parallax" style="background-image: url('https://source.unsplash.com/featured/?virtual,reality');">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl font-bold" data-aos="fade-up">Alpha Build - Demo the Metaverse</h1>
+            <p class="mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Welcome to the alpha build of the Virtual Sport Group Metaverse. Experience firsthand what it's like to immerse yourself in the future of sports entertainment. 
+                Get ready to explore the next level of fan engagement with our cutting-edge technology and vision for digital interaction.
+            </p>
+            <a href="#explore-demo" class="mt-10 inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-500" data-aos="fade-up" data-aos-delay="400">Explore the Demo</a>
+        </div>
+    </section>
+
+    <!-- Password Protected Pixel Streaming Demo Section -->
+    <section id="explore-demo" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-left">Access the Alpha Build Demo</h2>
+            <p class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+                To access our live demo of the Alpha Build, please enter the password below. This demo showcases our Pixel Streaming technology, giving you a real-time experience of our metaverse.
+            </p>
+            <!-- Password Input Form -->
+            <div id="password-form" class="max-w-md mx-auto mb-10" data-aos="fade-up">
+                <input type="password" id="demo-password" placeholder="Enter Password" class="w-full px-3 py-2 rounded-lg bg-gray-700 text-gray-300 mb-4">
+                <button id="access-demo" class="bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-500 w-full">Access Demo</button>
+            </div>
+            <!-- Pixel Streaming Demo Container -->
+            <div id="demo-container" class="hidden" data-aos="fade-up">
+                <div id="am-container" style="width:640px; height:480px;" class="mx-auto">
+                    <div id="arcane-player" data-project-id="4218" data-project-key="64fcc048-f20f-4adc-a184-a79bbb879061" data-token="Ve0n8i9bHzVA"></div>
+                    <script src="https://embed.arcanemirage.com/64fcc048-f20f-4adc-a184-a79bbb879061/e" defer></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-right">Get Involved in the Alpha</h2>
+            <p class="text-center text-gray-300 mb-10" data-aos="fade-up">
+                Interested in being part of the alpha testing for our metaverse? We are looking for passionate fans and tech enthusiasts to join us as we shape the future of sports engagement.
+                Sign up below to get early access, provide feedback, and help us make this experience the best it can be.
+            </p>
+            <form class="max-w-3xl mx-auto" data-aos="fade-up">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 rounded-lg bg-gray-700 text-gray-300" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-300">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 rounded-lg bg-gray-700 text-gray-300" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-500">Sign Up for Alpha Access</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-6">
+        <div class="text-center text-gray-500">
+            &copy; 2024 Virtual Sport Group. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+      AOS.init();
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuToggle.addEventListener('click', () => {
+        if (mobileMenu) {
+          mobileMenu.classList.toggle('hidden');
+        }
+      });
+
+      // Password protection logic
+      document.getElementById('access-demo').addEventListener('click', () => {
+        const password = document.getElementById('demo-password').value;
+        if (password === 'sportsgroup') {
+          document.getElementById('demo-container').classList.remove('hidden');
+          // Remove the password input and button after successful authentication
+          document.getElementById('password-form').remove();
+        } else {
+          alert('Incorrect password. Please try again.');
+        }
+      });
+    </script>
+</body>
+</html>
